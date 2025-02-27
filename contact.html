@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Communauté Virtuelle</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="CVP-B.jpg" alt="Logo Communauté"></a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="ressources.html">Ressources</a></li>
+                <li><a href="evenements.html">Événements</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact">
+            <h2>Contactez-nous</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Envoyer</button>
+            </form>
+
+            <div class="contact-info">
+                <h3>Nos Coordonnées</h3>
+                <p>Université Virtuelle de Côte d'Ivoire</p>
+                <p>Port-Bouet, Abidjan</p>
+                <p>Email: contact@universitevirtuelle.ci</p>
+                <p>Tél: +225 00 00 00 00</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Communauté Virtuelle de Port-Bouet</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script1.js"></script>
+    
+    <?php include('contact.php'); ?>
+</body>
+</html>

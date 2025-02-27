@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ressources - Communauté Virtuelle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="CVP-B.jpg" alt="Logo Communauté"></a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="ressources.html">Ressources</a></li>
+                <li><a href="evenements.html">Événements</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="resources">
+            <h2>Nos Ressources</h2>
+            <div class="filter-buttons">
+                <button onclick="filterResources('tous')">Tous</button>
+                <button onclick="filterResources('academique')">Académique</button>
+                <button onclick="filterResources('formation')">Formation</button>
+            </div>
+
+            <div id="resourcesList" class="resources-grid">
+                <div class="resource-card academique">
+                    <h3>Guide d'Étude</h3>
+                    <p>Méthodologie de recherche académique</p>
+                    <a href="#" class="download-btn">Télécharger</a>
+                </div>
+                <div class="resource-card formation">
+                    <h3>Webinaire IA</h3>
+                    <p>Introduction à l'Intelligence Artificielle</p>
+                    <a href="#" class="download-btn">Télécharger</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer >
+        <div class="footer-content">
+            <p>© 2024 Communauté Virtuelle de Port-Bouet</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script1.js"></script>
+</body>
+</html>
